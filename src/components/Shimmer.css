@@ -1,0 +1,31 @@
+.shimmer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 100px;
+}
+.shimmer-cards {
+    width: 300px;
+    height: 400px;
+    background: linear-gradient(
+        to right,
+        hsl(0, 6%, 91%) 0%,
+        #fef8f8 20%,
+        #f0f0f0 40%,
+        #f0f0f0 100%
+    );
+    background-size: 150% 100%;
+    animation: shimmer 1s infinite;
+    margin: 10px;
+    border-radius: 8px;
+    position: relative;
+}
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
